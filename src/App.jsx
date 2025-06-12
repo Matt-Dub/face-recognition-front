@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import ParticlesBg from 'particles-bg'
-import '../style/App.css';
+import './style/App.css';
 import Navigation from './components/Navigation';
 import Logo from './components/Logo';
 import ImageLinkForm from './components/ImageLinkForm'
