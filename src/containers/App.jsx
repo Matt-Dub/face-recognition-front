@@ -91,9 +91,7 @@ function App() {
       
       try {
 
-        const clairifiCall = await fetch('https://api.clarifai.com/v2/models/' + MODEL_ID + "/versions/" + MODEL_VERSION_ID + "/outputs", requestOptions, {
-          headers: {'Access-Control-Allow-Origin': '*'}
-        })
+        const clairifiCall = await fetch('https://api.clarifai.com/v2/models/' + MODEL_ID + "/versions/" + MODEL_VERSION_ID + "/outputs", requestOptions)
         const clairifiResponse = await clairifiCall.json();
 
         
