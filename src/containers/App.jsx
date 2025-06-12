@@ -22,9 +22,10 @@ const initState = {
 function App() {
 
   useEffect(() => {
+    console.log('fetching...: ', 'https://hidden-mountain-90417-d14937a6dd9b.herokuapp.com')
     fetch('https://hidden-mountain-90417-d14937a6dd9b.herokuapp.com')
     .then(response => response.json())
-    .then('USEEFFECT: ', console.log);
+    .then(console.log);
   }, []);
 
   const [ input, setInput ] = useState('');
