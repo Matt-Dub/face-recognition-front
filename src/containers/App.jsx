@@ -27,10 +27,6 @@ function App() {
     .then('USEEFFECT: ', console.log);
   }, []);
 
-  useEffect(() => {
-
-  })
-
   const [ input, setInput ] = useState('');
   const [ imageUrl, setImageUrl ] = useState('');
   const [ box, setBox ] = useState({});
