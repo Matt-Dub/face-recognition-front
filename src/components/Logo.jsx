@@ -7,7 +7,7 @@ function Logo () {
         <div className="logo-container">
             <p>Welcome to my</p>
             <h1>Face Reckon App</h1>
-            <Tilt 
+            {/* <Tilt 
                 className='shadow-2 tilt-logo parallax-effect-glare-scale' 
                 style={{ height: '120px', backgroundColor: '#fcc35a' }}
                 perspective={500}
@@ -18,7 +18,7 @@ function Logo () {
                 <div className='brain-logo__wrapper pa3'>
                     <img className='brain-logo' src={BrainIcon} alt="Brain Logo" />
                 </div>
-            </Tilt>
+            </Tilt> */}
         </div>
     );
 }
