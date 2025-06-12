@@ -22,8 +22,7 @@ const initState = {
 function App() {
 
   useEffect(() => {
-    console.log('fetching...: ', 'https://hidden-mountain-90417-d14937a6dd9b.herokuapp.com')
-    fetch('https://hidden-mountain-90417-d14937a6dd9b.herokuapp.com')
+    fetch('https://hidden-mountain-90417-d14937a6dd9b.herokuapp.com/')
     .then(response => response.json())
     .then(console.log);
   }, []);
