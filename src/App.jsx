@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import ParticlesBg from 'particles-bg'
 import '../style/App.css';
-import Navigation from '../components/Navigation';
-import Logo from '../components/Logo';
-import ImageLinkForm from '../components/ImageLinkForm'
-import Rank from '../components/Rank'
-import FaceRecognition from '../components/FaceRecognition'
-import SignIn from '../components/SignIn/SignIn'
-import Register from '../components/SignIn/Register'
+import Navigation from './components/Navigation';
+import Logo from './components/Logo';
+import ImageLinkForm from './components/ImageLinkForm'
+import Rank from './components/Rank'
+import FaceRecognition from './components/FaceRecognition'
+import SignIn from './components/SignIn/SignIn'
+import Register from './components/SignIn/Register'
 
 // import Clarifai from 'clarifai';
 
