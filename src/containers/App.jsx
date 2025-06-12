@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     fetch('https://hidden-mountain-90417-d14937a6dd9b.herokuapp.com')
     .then(response => response.json())
-    .then(console.log);
+    .then('USEEFFECT: ', console.log);
   }, []);
 
   useEffect(() => {
