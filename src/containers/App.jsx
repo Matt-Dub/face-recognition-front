@@ -91,7 +91,7 @@ function App() {
       
       try {
 
-        const clairifiCall = await fetch('https://api.clarifai.com/v2/models/' + MODEL_ID + "/versions/" + MODEL_VERSION_ID + "/outputs", requestOptions)
+        const clairifiCall = await fetch('https://cors-anywhere.herokuapp.com/https://api.clarifai.com/v2/models/' + MODEL_ID + "/versions/" + MODEL_VERSION_ID + "/outputs", requestOptions)
         const clairifiResponse = await clairifiCall.json();
 
         
@@ -129,12 +129,13 @@ function App() {
         })
 
         const dbResponse = await imageServerCall.json();
-        console.log('imageResponse: ', dbResponse)
-        return setUser(dbResponse);
+        console.log('imageResponse: ', dbResponse[0])
+        setUser(dbResponse[0]);
 
       } catch (err) {
         console.log('error image: ', err)
       }
+      console.log('USER: ', user);
       return user;
   }
 

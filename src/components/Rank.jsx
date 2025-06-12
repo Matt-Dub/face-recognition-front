@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Rank ( { name, entries }) {
+
+    //console.log('RANK: ', entries);
     return (
         <div className='rank-wrapper' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
             <div className="white f3">
